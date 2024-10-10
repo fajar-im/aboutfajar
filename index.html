@@ -1,44 +1,132 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fajar Wisnu Pratama - CV</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fajar Wisnu Pratama - Online CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS unique */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #f4f4f4;
+            font-size: 16px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: #dcdcdc;
+            margin-top: 10px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            margin-top: 15px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #1e3c72;
+            background-color: #ffffff;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #dcdcdc;
+            color: #2a5298;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="profile.jpeg" alt="Profile Picture">
+        <div class="header">
+            <img src="https://via.placeholder.com/150" alt="Fajar Wisnu Pratama" class="profile-img">
             <h1>Fajar Wisnu Pratama</h1>
-            <h2>Mahasiswa Universitas Buana Perjuangan Karawang
-            
-        </header>
-        <section class="profile">
-            <h2>Tentangku:</h2>
-            <p>Saya Fajar Wisnu Pratama, mahasiswa Universitas Buana Perjuangan Karawang. Saat ini, saya sedang menempuh studi di bidang yang saya minati, yaitu Teknik Informatika. Saya memiliki semangat tinggi untuk belajar dan mengembangkan keterampilan yang dapat menunjang karier saya di masa depan.</p>
-        </section>
-        <section class="Education">
-            <h2>Riwayat Pendidikan:</h2>
-            <u1>
-                <li>SDN Sukaharja 2 </li>
-                <li>MTSN 4 Karawang </li>
-                <li>SMAN Telukjambe 1</li>
-                <li>Universitas Buana Perjuangan Karawang (saat ini) </li>
-            </u1>
-        </section>
-        <section class="experience">
-            <h2>Pengalaman:</h2>
-            <ul>
-                <li>Mengikuti Perlombaan Desain Logo</li>
-                <li>Mengikuti Kegiatan Mahasiswa Seni dan Budaya</li>
-                <li>Menjadi Panitia Musma Himatif</li>
-                <li>Menjadi Panitia DCDC Kampus Night</li>
-            </ul>
-        </section>
-        <footer>
-            <p>Kontak: if23.fajarpratama@mhs.ubpkarawang.ac.id</p>
-        </footer>
+            <p>Mahasiswa Universitas Buana Perjuangan Karawang</p>
+        </div>
+        <div class="content">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa yang antusias dan aktif dalam mengembangkan keterampilan di bidang teknologi dan basis data. Selain fokus pada akademik, saya juga terlibat dalam berbagai kegiatan organisasi dan seni di kampus.</p>
+            <h2>Pengalaman</h2>
+            <p>Panitia Musma Himatif, DCDC Kampus Night, serta berbagai acara seni dan budaya di kampus.</p>
+            <h2>Kontak</h2>
+            <p>Email: fajar.wisnu@example.com</p>
+        </div>
     </div>
 </body>
 </html>

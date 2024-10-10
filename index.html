@@ -21,7 +21,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
@@ -45,22 +46,22 @@
         }
 
         .header h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: bold;
             color: #ffffff;
         }
 
         .header p {
-            font-size: 18px;
+            font-size: 16px;
             color: #dcdcdc;
             margin-top: 10px;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 5px solid #ffffff;
+            border: 4px solid #ffffff;
             margin-top: 15px;
         }
 
@@ -71,7 +72,7 @@
         }
 
         .content h2 {
-            font-size: 24px;
+            font-size: 22px;
             border-bottom: 2px solid #ffffff;
             padding-bottom: 5px;
             margin-bottom: 10px;
@@ -109,6 +110,34 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .header p {
+                font-size: 14px;
+            }
+
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .content h2 {
+                font-size: 20px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -122,15 +151,15 @@
             <h2>Tentang Saya</h2>
             <p>Saya Fajar Wisnu Pratama, mahasiswa Universitas Buana Perjuangan Karawang. Saat ini, saya sedang menempuh studi di bidang yang saya minati, yaitu teknik informatika. Saya memiliki semangat tinggi untuk belajar dan mengembangkan keterampilan yang dapat menunjang karier saya di masa depan. Selain fokus pada akademik, saya juga terlibat dalam berbagai kegiatan organisasi dan seni di kampus.</p>
             <h2>Pendidikan</h2>
-            <p>
+            <ul>
                 <li><strong>SD: </strong>SDN Sukaharja 2</li>
                 <li><strong>SMP: </strong>MTSN 4 Karawang</li>
-                <li><strong>SMA: </strong>SMAN 1 Telukjambe Timur 2</li>
+                <li><strong>SMA: </strong>SMAN 1 Telukjambe Timur</li>
                 <li><strong>Kuliah: </strong>Universitas Buana Perjuangan Karawang (saat ini)</li>
-            </p>
+            </ul>
             
             <h2>Pengalaman</h2>
-            <p>Menjadi Panitia Acara Musma Himatif, Menjadi Panitia Acara DCDC Kampus Night, Mengikuti Kegiatan UKM SeniBudaya, Serta Mengikuti Lomba Desain Logo.</p>
+            <p>Menjadi Panitia Acara Musma Himatif, Menjadi Panitia Acara DCDC Kampus Night, Mengikuti Kegiatan UKM SeniBudaya, serta Mengikuti Lomba Desain Logo.</p>
             <h2>Kontak</h2>
             <p>Email: if23.fajarpratama@mhs.ubpkarawang.ac.id</p>
         </div>

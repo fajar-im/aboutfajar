@@ -1,102 +1,76 @@
-/* General Reset */
-* {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-/* Body Styling */
-body {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: #f4f4f4;
-    font-size: 16px;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Container */
+/* Mengatur gaya untuk container utama */
 .container {
-    max-width: 800px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    animation: fadeIn 1s ease-in-out;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
 }
 
-/* Card Header */
-.header {
+/* Mengatur gaya untuk header */
+header {
     text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #007BFF;
 }
 
-.header h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #ffffff;
+header h1 {
+    font-size: 2.5em;
+    color: #007BFF;
 }
 
-.header p {
-    font-size: 18px;
-    color: #dcdcdc;
-    margin-top: 10px;
+header p {
+    font-size: 1.2em;
+    color: #555;
 }
 
-/* Card Content */
-.content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
+/* Mengatur gaya untuk section */
+section {
+    margin: 20px 0;
 }
 
-.content h2 {
-    font-size: 24px;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 5px;
+section h2 {
+    font-size: 1.8em;
+    color: #007BFF;
+    border-left: 5px solid #007BFF;
+    padding-left: 10px;
     margin-bottom: 10px;
 }
 
-.content p {
-    font-size: 16px;
-    line-height: 1.8;
+section p, section ul {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-/* Button */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Mengatur gaya untuk footer */
+footer {
+    text-align: center;
+    padding: 10px;
     margin-top: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #1e3c72;
-    background-color: #ffffff;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background-color: #dcdcdc;
-    color: #2a5298;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    border-top: 2px solid #007BFF;
+    font-size: 0.9em;
+    color: #555;
 }
